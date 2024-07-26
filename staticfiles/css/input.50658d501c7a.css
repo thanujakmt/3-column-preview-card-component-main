@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.learn:hover{
+    @apply text-white bg-Bright_orange border-white border 
+}
+
+.learn {
+    @apply text-Bright_orange
+} 
+
+.learn1 {
+    @apply text-Dark_cyan
+}
+
+.learn2 {
+    @apply text-Very_dark_cyan
+}
+
+.learn1:hover{
+    @apply text-white bg-Dark_cyan border-white border 
+}
+
+.learn2:hover{
+    @apply text-white bg-Very_dark_cyan border-white border 
+}
+
+.bg_color {
+    @apply bg-Bright_orange
+}
+
+.bg_color1{
+    @apply bg-Dark_cyan
+}
+
+.bg_color2 {
+    @apply bg-Very_dark_cyan
+}

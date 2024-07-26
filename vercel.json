@@ -1,9 +1,14 @@
 {
-    "version": 2,
-    "builds": [
-        { "src": "Dockerfile", "use": "@vercel/docker" }
-    ],
+    "builds":[{
+        "src": "previewcardapp/wsgi.py",
+        "use": "@vercel/python",
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.11.3" }
+    }],
     "routes": [
-        { "src": "/(.*)", "dest": "/" }
+        {
+            "src": "/(.*)",
+            "dest": "previewcardapp/wsgi.py"
+        }
     ]
-}
+ }
+ 
